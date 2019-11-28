@@ -135,7 +135,7 @@ button:focus,
   flex: 0 1 200px;
 }
 
-.page-header__item :last-child {
+.page-header__item:last-child {
   flex-grow: 1;
   text-align: right;
 }
