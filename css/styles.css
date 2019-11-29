@@ -181,7 +181,7 @@ button:focus,
   align-items: center;
 }
 
-.about-list { 
+.about-list {
   list-style-type: none;
   margin-bottom: 10px;
   padding: 0;
@@ -245,7 +245,7 @@ button:focus,
   }
 
   .about svg {
-    width: 500px;
+    width: 100%;
   }
 
   .contact {
