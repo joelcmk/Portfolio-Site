@@ -249,7 +249,7 @@ button:focus,
   }
 
   .about svg {
-    width: 500px;
+    width: 100%;
   }
 
   .contact {
