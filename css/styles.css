@@ -181,6 +181,10 @@ button:focus,
   align-items: center;
 }
 
+.about svg {
+  width: 100%;
+}
+
 .about-list {
   list-style-type: none;
   margin-bottom: 10px;
