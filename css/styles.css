@@ -181,6 +181,11 @@ button:focus,
   align-items: center;
 }
 
+.about-svg {
+  width: 700px;
+  margin: 0 auto;
+}
+
 .about-list {
   list-style-type: none;
   margin-bottom: 10px;
@@ -192,7 +197,7 @@ button:focus,
     grid-template-columns: 1fr;
   }
 
-  .about svg {
+  .about-svg {
     width: 350px;
   }
 }
@@ -245,7 +250,7 @@ button:focus,
   }
 
   .about-svg {
-    width: 100%;
+    width: 300px;
   }
 
   .contact {
