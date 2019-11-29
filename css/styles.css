@@ -181,10 +181,7 @@ button:focus,
   align-items: center;
 }
 
-.about-svg {
-  width: 700px;
-  margin: 0 auto;
-}
+
 
 .about-list {
   list-style-type: none;
