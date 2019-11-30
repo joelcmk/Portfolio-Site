@@ -192,6 +192,17 @@ button:focus,
   padding: 0;
 }
 
+.contact {
+  text-align: center;
+  width: 600px;
+  margin: 0 auto;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+}
+
 @media all and (max-width: 500px) {
   .grid {
     grid-template-columns: 1fr;
