@@ -71,7 +71,7 @@ button,
   font-family: inherit;
 
   /* styles the background color, font color, and text decoration (underline, etc.) of the button */
-  background-color: var(--primary-color);
+  background-color: var(--secundary-color);
   color: var(--white);
   text-decoration: none;
 
