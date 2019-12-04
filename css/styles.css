@@ -209,6 +209,9 @@ button:focus,
 }
 
 @media all and (max-width: 500px) {
+  .page-header--logo{
+    text-align: center;
+  }
   .grid {
     grid-template-columns: 1fr;
   }
