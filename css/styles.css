@@ -186,6 +186,11 @@ button:focus,
   margin: 0 auto;
 }
 
+.about-a {
+  display: flex;
+  justify-content: center;
+}
+
 .about-list {
   list-style-type: none;
   margin-bottom: 10px;
