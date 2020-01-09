@@ -85,6 +85,11 @@ button,
   transition: 0.2s opacity;
 }
 
+.contact_button {
+  border-radius: 7px;
+  padding: 30px 50px;
+}
+
 a.contact_button {
   color: white;
 }
@@ -113,19 +118,16 @@ button:focus,
 .page-header {
   display: flex;
   width: 100%;
-  padding: 20px;
+  line-height: 35px;
   background-color: white;
+  align-items: center;
 }
 
 .page-header--logo {
+  margin-left: 20px;
   text-decoration: none;
   font-size: 30px;
   font-weight: bolder;
-}
-
-.page-header__item:last-child {
-  flex-grow: 1;
-  text-align: right;
 }
 
 .navegation-list {
@@ -139,6 +141,12 @@ button:focus,
 
 .page_header__item {
   flex: 0 1 200px;
+}
+
+.page-header__item:last-child {
+  flex-grow: 1;
+  text-align: right;
+  margin-right: 20px;
 }
 
 .navigation-list__item--active {
@@ -160,11 +168,12 @@ button:focus,
 }
 
 .profile h1 {
-  color: white;
+  color: black;
 }
 
 .profile p {
-  color: white;
+  color: black;
+  margin-bottom: 50px;
 }
 
 .page_footer {
@@ -172,7 +181,8 @@ button:focus,
   display: flex;
   flex-direction: column;
   text-align: center;
-  border-top: 2px solid var(--lightgray);
+  background-color: black;
+  color: white;
 }
 
 .home_work {
@@ -181,6 +191,7 @@ button:focus,
 }
 
 .home_work h1 {
+  margin: 0;
   text-align: center;
 }
 
@@ -243,6 +254,10 @@ button:focus,
 .contact form {
   display: flex;
   flex-direction: column;
+}
+
+.contact-button {
+  text-align: center;
 }
 
 @media all and (max-width: 500px) {
