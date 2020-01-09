@@ -25,7 +25,7 @@ body {
   font-weight: var(--font-weight-400);
   font-size: var(--font-weight-400);
   line-height: 1.6;
-  background-color: #ffcd8c;
+  background-color: #2b92b0;
 }
 
 h1 {
@@ -72,7 +72,7 @@ button,
   font-family: inherit;
 
   /* styles the background color, font color, and text decoration (underline, etc.) of the button */
-  background-color: #2b92b0;
+  background-color: #ffcd8c;
   color: var(--white);
   text-decoration: none;
 
@@ -91,11 +91,11 @@ button,
 }
 
 a.contact_button {
-  color: white;
+  color: black;
 }
 
 a.contact_button:visited {
-  color: white;
+  color: black;
 }
 
 button:hover,
@@ -168,11 +168,11 @@ button:focus,
 }
 
 .profile h1 {
-  color: black;
+  color: white;
 }
 
 .profile p {
-  color: black;
+  color: white;
   margin-bottom: 50px;
 }
 
