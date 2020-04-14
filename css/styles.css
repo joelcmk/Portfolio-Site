@@ -200,6 +200,20 @@ button:focus,
   text-align: center;
 }
 
+.a-work {
+  color: var(--white);
+  text-decoration: none;
+}
+
+.a-work:visited {
+  color: var(--white);
+}
+
+.work-s {
+  font-weight: bolder;
+  color: var(--primary-color);
+}
+
 /* Grid fallback */
 .grid__item {
   display: inline-block;
