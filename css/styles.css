@@ -5,13 +5,13 @@ Primary Color (Purple): #357b70;
 Secondary Color (Orange): #e0b354;
 */
 :root {
-  --primary-color: #357b70;
-  --secundary-color: #e0b354;
-  --dark-gray: #2b2b2b;
-  --visited-links: #05676e;
+  --primary-color: #202840;
+  --secundary-color: #F2E7AE;
+  --dark-gray: #F2E7AE;
+  --visited-links: #202840;
   --active-links: #489c79;
   --white: #fff;
-  --lightgray: lightgray;
+  --lightgray: #f9a637;
   --font-weight-400: 400;
   --font-weight-700: 700;
 }
@@ -25,6 +25,7 @@ body {
   font-weight: var(--font-weight-400);
   font-size: var(--font-weight-400);
   line-height: 1.6;
+  background-color: #6EC5E9;
 }
 
 h1 {
@@ -71,7 +72,7 @@ button,
   font-family: inherit;
 
   /* styles the background color, font color, and text decoration (underline, etc.) of the button */
-  background-color: var(--secundary-color);
+  background-color: #FF5959;
   color: var(--white);
   text-decoration: none;
 
@@ -82,6 +83,24 @@ button,
   /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
   transition: 0.2s opacity;
+}
+
+.home_button {
+  border-radius: 7px;
+  padding: 30px 50px;
+  color: white;
+}
+
+.contact_button {
+
+}
+
+a.home_button {
+  color: white;
+}
+
+a.home_button:visited {
+  color: white;
 }
 
 button:hover,
@@ -100,44 +119,20 @@ button:focus,
   color: var(--dark-gray);
 }
 
-.navigation-list__item--active {
-  text-decoration: none;
-}
-
-.profile_portrait {
-  float: left;
-  width: 250px;
-  margin-right: 40px;
-  border-radius: 50%;
-}
-
-.profile {
-  max-width: 700px;
-  margin: 0 auto;
-}
-
-.page_footer {
-  clear: both;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  border-top: 2px solid var(--lightgray);
-}
-
+/* Header */
 .page-header {
   display: flex;
   width: 100%;
-  padding: 20px;
-  border-bottom: 1px solid var(--lightgray);
+  line-height: 35px;
+  background-color: white;
+  align-items: center;
 }
 
-.page_header__item {
-  flex: 0 1 200px;
-}
-
-.page-header__item:last-child {
-  flex-grow: 1;
-  text-align: right;
+.page-header--logo {
+  margin-left: 20px;
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: bolder;
 }
 
 .navegation-list {
@@ -147,6 +142,76 @@ button:focus,
 .navegation-list li {
   display: inline-block;
   margin-left: 15px;
+}
+
+.page_header__item {
+  flex: 0 1 200px;
+}
+
+.page-header__item:last-child {
+  flex-grow: 1;
+  text-align: right;
+  margin-right: 20px;
+}
+
+.navigation-list__item--active {
+  text-decoration: none;
+}
+
+/* Profile */
+.profile {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.profile_portrait {
+  float: left;
+  width: 250px;
+  margin-right: 40px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.profile h1 {
+  color: black;
+}
+
+.profile p {
+  color: black;
+  margin-bottom: 50px;
+}
+
+.page_footer {
+  clear: both;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+
+.home_work {
+  clear: both;
+  background-color: white;
+}
+
+.home_work h1 {
+  margin: 0;
+  text-align: center;
+}
+
+.a-work {
+  color: var(--white);
+  text-decoration: none;
+}
+
+.a-work:visited {
+  color: var(--white);
+}
+
+.work-s {
+  font-weight: bolder;
+  color: var(--primary-color);
 }
 
 /* Grid fallback */
@@ -165,6 +230,7 @@ button:focus,
 .grid__item {
   background-color: var(--lightgray);
   padding: 10px;
+  color: white;
 
   /* Set width to auto */
   width: auto;
@@ -175,6 +241,7 @@ button:focus,
   grid-row: 1 / 3;
 }
 
+/* About */
 .about {
   display: flex;
   flex-direction: column;
@@ -206,6 +273,10 @@ button:focus,
 .contact form {
   display: flex;
   flex-direction: column;
+}
+
+.contact-button {
+  text-align: center;
 }
 
 @media all and (max-width: 500px) {
