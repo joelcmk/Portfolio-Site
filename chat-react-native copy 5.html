@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Chat App React Native</title>
+  <meta name="viewpoint" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <linlk rel="stylesheet" href="css/flickity.css">
+</head>
+
+<body>
+  <!-- Header including the logo and the main navigation -->
+  <header class="page-header">
+    <a class="page-header--logo" href="index.html">
+      Joel Saucedo
+      <!-- <img src="img/logo.png" alt="Joel Saucedo logo, it consist of my name, with the words on black and the background on yellow" class="page-header_item"> -->
+    </a>
+    <nav class="main-navegation page-header__item">
+      <ul role="menubar" class="navegation-list">
+        <li role="presentation">
+          <a href="index.html" role="menuitem" class="navigation-list__item">Home</a>
+        </li>
+        <li role="presentation">
+          <a href="about.html" role="menuitem" class="navigation-list__item navigation-list__item--active">About Me</a>
+        </li>
+        <li role="presentation">
+          <a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
+        </li>
+        <li role="presentation">
+          <a href="work.html" role="menuitem" class="navigation-list__item">Work</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="description-chat">
+    <div class="description-p">
+      <p>Chat app biud with React native. The users can register entering their names. They can enter in a general chat.
+        The users can exchange text messages, send images and share current location.<p>
+    </div>
+  </div>
+  <div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 4</div>
+      <img src="img/1.png" style="width: 100%">
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 4</div>
+      <img src="img/2.png" style="width: 100%">
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 4</div>
+      <img src="img/3.png" style="width: 100%">
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">4 / 4</div>
+      <img src="img/4.png" style="width: 100%">
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094</a>
+    <a class="next" onclick="plusSlides(1)">&#10095</a>
+
+  </div>
+  <br>
+
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+  </div>
+
+  <div class="btn-chat">
+    <button>View on Github</button>
+  </div>
+
+  <footer class="page_footer">
+    <p>Find me on</p>
+    <div class="social-media">
+      <a href="#"><img src="img/github.svg" alt="github"></a>
+      <a href="#"><img src="img/twitter.svg" alt="twitter"></a>
+      <a href="#"><img src="img/linkedin.svg" alt="linkedin"></a>
+      <a href="mailto:joelcmk@gmail.com"><img src="img/mail.svg" alt="mail"></a>
+    </div>
+  </footer>
+  <script>
+    var slideindex = 1;
+    showSlides(slideindex);
+
+    function plusSlides(n) {
+      showSlides(slideindex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideindex = n);
+    }
+
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot")
+      if (n > slides.length) { slideindex = 1 }
+      if (n < 1) { slideindex = slides.length }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace("active", "");
+      }
+      slides[slideindex - 1].style.display = "block";
+      dots[slideindex - 1].className += " active";
+
+    }
+
+  </script>
+</body>
+
+</html>
