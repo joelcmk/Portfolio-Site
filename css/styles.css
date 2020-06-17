@@ -359,7 +359,6 @@ button:focus,
   margin-bottom: 20px;
 }
 
-
 @media all and (max-width: 500px) {
   .page-header--logo{
     text-align: center;
