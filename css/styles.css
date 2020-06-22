@@ -262,8 +262,6 @@ button:focus,
 }
 
 .contact {
-  text-align: center;
-  width: 500px;
   margin: 0 auto;
 }
 
@@ -274,6 +272,12 @@ button:focus,
 
 .contact-button {
   text-align: center;
+}
+
+.contact_footer {
+  bottom: 0;
+  position: fixed;
+  width: 100%;
 }
 
 /* ChatApp */
@@ -378,7 +382,7 @@ button:focus,
 
 .contact {
   text-align: center;
-  width: 200px;
+  max-width: 700px;
 }
 
 @media all and (min-width: 500px) and (max-width: 750px) {
