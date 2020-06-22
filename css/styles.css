@@ -283,6 +283,11 @@ button:focus,
 /* ChatApp */
 
 /* Slide Show */
+.slideshow-container_desktop {
+  max-width: 600px;
+  position: relative;
+  margin: auto;
+}
 .slideshow-container {
   max-width: 300px;
   position: relative;
@@ -319,6 +324,11 @@ button:focus,
   padding: 8px 12px;
   position: absolute;
   top: 0;
+}
+
+.dot_container {
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .dot {
