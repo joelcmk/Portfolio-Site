@@ -211,6 +211,10 @@ button:focus,
   color: var(--primary-color);
 }
 
+#work_app {
+  margin-left: 10px;
+}
+
 /* Grid fallback */
 .grid__item {
   display: inline-block;
