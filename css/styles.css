@@ -244,8 +244,12 @@ button:focus,
 
 /* About */
 .about {
-  display: flex;
-  align-items: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.about-a {
+  text-align: center; 
 }
 
 .about-svg {
